@@ -7,7 +7,7 @@
   };
 
   outputs =
-    { nixpkgs, utils }:
+    { nixpkgs, utils, ... }:
     utils.lib.eachDefaultSystem (
       system:
       let
