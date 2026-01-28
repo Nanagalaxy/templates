@@ -1,5 +1,5 @@
 {
-  description = "Development environment";
+  description = "Python development environment";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
@@ -16,6 +16,15 @@
       {
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
+            (python314.withPackages (
+              ps: with ps; [
+                pytest
+                pytest-cov
+
+                # Add python pkgs here
+              ]
+            ))
+            ruff
             # Add pkgs here
           ];
         };

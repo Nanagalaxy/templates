@@ -5,6 +5,7 @@ A collection of miscellaneous templates.
 ## Available Templates
 
 - **dev** (default): Development environment starter with a `flake.nix` and `.envrc` file.
+- **python**: Python development environment with common tools like `pytest` and `ruff`.
 
 ## Usage
 
