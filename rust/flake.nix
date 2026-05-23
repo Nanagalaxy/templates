@@ -1,5 +1,5 @@
 {
-  description = "Rust app with Nix flakes, oxalica/rust-overlay, rust-toolchain.toml, and crane";
+  description = "Rust development environment";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
