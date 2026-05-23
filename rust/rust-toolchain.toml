@@ -1,0 +1,10 @@
+[toolchain]
+channel = "stable"
+components = [
+    "rustfmt",
+    "clippy",
+    "rust-docs",
+    "rust-src",      # rust-src is needed for rust-analyzer
+    "rust-analyzer",
+]
+profile = "minimal" # Include rustc, rust-std and cargo

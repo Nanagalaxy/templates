@@ -13,6 +13,10 @@
           path = ./python;
           description = "Python development environment";
         };
+        rust = {
+          path = ./rust;
+          description = "Rust development environment";
+        };
       };
 
       templates.default = self.templates.dev;

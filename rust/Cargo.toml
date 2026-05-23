@@ -1,0 +1,7 @@
+[package]
+name = "my-crate" # TODO: rename `my-crate` if needed
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[dependencies]
