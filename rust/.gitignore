@@ -1,0 +1,5 @@
+# Direnv shell dir
+.direnv/
+
+# Cargo build dir
+target/

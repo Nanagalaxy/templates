@@ -8,7 +8,6 @@
 
     crane = {
       url = "github:ipetkov/crane";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     rust-overlay = {
@@ -73,7 +72,7 @@
 
         # Main crate derivation.
         #
-        # TODO: rename `my-crate` to your package name (e.g. `my-app`).
+        # TODO: rename `my-crate` to the package name (e.g. `my-app`).
         my-crate = craneLib.buildPackage (
           commonArgs
           // {
@@ -167,9 +166,8 @@
           # Can be removed if rust-src and rust-analyzer are removed from the toolchain components in rust-toolchain.toml.
           RUST_SRC_PATH = "${rustToolchain}/lib/rustlib/src/rust/library";
 
-          # Optional: keep target/ in the project (instead of /tmp) so
-          # incremental builds survive shell restarts.
-          CARGO_TARGET_DIR = ".target";
+          CARGO_TARGET_DIR = "target";
+          CARGO_BUILD_TARGET_DIR = "target";
 
           shellHook = ''
             echo "Loaded Rust dev shell"
