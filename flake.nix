@@ -17,6 +17,10 @@
           path = ./rust;
           description = "Rust development environment";
         };
+        javascript = {
+          path = ./javascript;
+          description = "JavaScript development environment";
+        };
       };
 
       templates.default = self.templates.dev;
