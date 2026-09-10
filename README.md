@@ -7,6 +7,7 @@ A collection of miscellaneous templates.
 - **dev** (default): Development environment starter with a `flake.nix` and `.envrc` file.
 - **python**: Python development environment with common tools like `pytest` and `ruff`.
 - **rust**: Rust development environment with common tools.
+- **javascript**: JavaScript development environment.
 
 ## Usage
 
